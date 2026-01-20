@@ -18,7 +18,27 @@
             flavor = "tap-preferred";
         };
     };
+/ {
+    combos {
+        compatible = "zmk,combos";
 
+        Esc {
+            bindings = <&kp LS(ESC)>;
+            key-positions = <0 1>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 11>;
+        };
+
+        CapsLock {
+            bindings = <&kp CAPS>;
+            key-positions = <22 21>;
+        };
+
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
